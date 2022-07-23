@@ -1,16 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap");
 
 /* COLOR VARIABLES */
-:root{
-    --white: white;
-    --black: black;
-    --button-bg: rgb(68, 65, 65);
-    --background--bg:rgb(84, 65, 206);
-    --warning: red;
-    --success: green;
+:root {
+  --white: white;
+  --black: black;
+  --button-bg: rgb(68, 65, 65);
+  --background--bg: rgb(84, 65, 206);
+  --warning: red;
+  --success: green;
 }
-
-
 
 /* RESET */
 * {
@@ -22,95 +20,113 @@
 
 /* GLOBAL STYLES */
 
-body{
-    font-family: 'Poppins', sans-serif;
+body {
+  font-family: "Poppins", sans-serif;
 }
-a{
-    color: var(--white);
-    text-decoration: none;
-}
-
-h1{
-    margin-bottom: 0.5rem;
+a {
+  color: var(--white);
+  text-decoration: none;
 }
 
-p{
-    margin-bottom: 1rem;
+h1 {
+  margin-bottom: 0.5rem;
 }
 
-form{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+p {
+  margin-bottom: 1rem;
 }
 
-form .input-control{
-    display: flex;
-    flex-direction: column;
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-form label{
-    font-weight:bold;
-    font-size: 0.8rem;
-    margin: 1rem 0 0.5rem 0;
+form .inputControl {
+  display: flex;
+  flex-direction: column;
 }
 
-form input{
-    height: 40px;
-    border: 1px solid var(--black);
-    border-radius: 5px;
-    outline: none;
-    background-color: none;
+.inputControl input:focus {
+  outline: 0;
 }
 
-form button{
-    height: 40px;
-    color: white;
-    border-radius: 5px;
-    outline: none;
-    background-color: var(--button-bg);
-    border: none;
+.inputControl.success input {
+  border-color: var(--success);
 }
 
-.auth__container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+.inputControl.error input {
+  border-color: var(--warning);
 }
 
-.auth__container--left{
-    background-color: var(--background--bg);
-    width: 40%;
-    height: 100vh;
+.inputControl .error {
+  color: var(--warning);
+  font-size: 9px;
+  height: 13px;
 }
 
-.auth__container--right{
-    width: 60%;
-   display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+form label {
+  font-weight: bold;
+  font-size: 0.8rem;
+  margin: 1rem 0 0.5rem 0;
 }
 
-.buttons__row{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-   text-align: center;
+form input {
+  height: 40px;
+  border: 1px solid var(--black);
+  border-radius: 5px;
+  outline: none;
+  background-color: none;
 }
 
-.buttons__row > small{
-    margin-top: 1rem;
-    font-size: 0.6rem;
-}
-.buttons__row > small > a{
-    color: inherit;
+form button {
+  height: 40px;
+  color: white;
+  border-radius: 5px;
+  outline: none;
+  background-color: var(--button-bg);
+  border: none;
 }
 
-.terms__and__conditions{
-    display: flex;
-    justify-content: center;
-    gap: 4px;
-    align-items: center;
+.auth__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.auth__container--left {
+  background-color: var(--background--bg);
+  width: 40%;
+  height: 100vh;
+}
+
+.auth__container--right {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.buttons__row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.buttons__row > small {
+  margin-top: 1rem;
+  font-size: 0.6rem;
+}
+.buttons__row > small > a {
+  color: inherit;
+}
+
+.terms__and__conditions {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  align-items: center;
 }
