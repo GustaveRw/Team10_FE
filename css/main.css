@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap');
+
+/* COLOR VARIABLES */
+:root{
+    --white: white;
+    --black: black;
+    --button-bg: rgb(68, 65, 65);
+    --background--bg:rgb(84, 65, 206);
+    --warning: red;
+    --success: green;
+}
+
+
+
+/* RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* GLOBAL STYLES */
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+h1{
+    margin-bottom: 0.5rem;
+}
+
+p{
+    margin-bottom: 1rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+form .input-control{
+    display: flex;
+    flex-direction: column;
+}
+
+form label{
+    font-weight:bold;
+    font-size: 0.8rem;
+    margin: 1rem 0 0.5rem 0;
+}
+
+form input{
+    height: 40px;
+    border: 1px solid var(--black);
+    border-radius: 5px;
+    outline: none;
+    background-color: none;
+}
+
+form button{
+    height: 40px;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+    background-color: var(--button-bg);
+    border: none;
+}
+
+.auth__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.auth__container--left{
+    background-color: var(--background--bg);
+    width: 40%;
+    height: 100vh;
+}
+
+.auth__container--right{
+    width: 60%;
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.buttons__row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   text-align: center;
+}
+
+.buttons__row > small{
+    margin-top: 1rem;
+    font-size: 0.6rem;
+}
+.buttons__row > small > a{
+    color: inherit;
+}
+
+.terms__and__conditions{
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    align-items: center;
+}
